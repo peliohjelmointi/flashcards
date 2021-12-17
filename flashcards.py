@@ -10,7 +10,7 @@ def hello_world():
     return render_template("welcome.html", welcome_message=welcome_message)
 
 
-@app.route('/card')
-def show_card():
-    card = db[0]
+@app.route('/card/<int:index>')
+def show_card(index):
+    card = db[index]
     return render_template("card.html", card=card)
