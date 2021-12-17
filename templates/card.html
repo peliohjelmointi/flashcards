@@ -5,7 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<button><a href="{{url_for('welcome')}}">To Welcome page</a></button>
 <p>{{card.question}}</p>
 <p>{{card.answer}}</p>
+<button><a href="{{url_for('show_card',index=index+1)}}">Next Card</a></button>
 </body>
 </html>

@@ -5,7 +5,7 @@ app = Flask(__name__)
 welcome_message="Welcome to Flask page!"
 
 @app.route('/')
-def hello_world():
+def welcome():
     global welcome_message
     return render_template("welcome.html", welcome_message=welcome_message)
 
@@ -14,7 +14,7 @@ def hello_world():
 def show_card(index):
     try:
         card = db[index]
-        return render_template("card.html", card=card)
+        return render_template("card.html", card=card, index=index)
     except IndexError:
         abort(404)
 
