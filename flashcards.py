@@ -6,8 +6,7 @@ welcome_message="Welcome to Flask page!"
 
 @app.route('/')
 def welcome():
-    global welcome_message
-    return render_template("welcome.html", welcome_message=welcome_message)
+    return render_template("welcome.html", cards=db)
 
 
 @app.route('/card/<int:index>')
