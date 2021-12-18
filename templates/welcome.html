@@ -5,15 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+<ul>
 {% for card in cards %}
     <li>
-        <button>
+
             <a href="{{url_for('show_card',index=loop.index0)}}">
                 {{card.question}}
             </a>
-        </button>
+
     </li>
 {% endfor %}
-
+</ul>
 </body>
 </html>

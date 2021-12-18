@@ -1,10 +1,1 @@
-[
-  {
-    "question": "What is the capital of Finland?",
-    "answer": "Helsinki"
-  },
-  {
-    "question": "What is the capital of Sweden?",
-    "answer": "Stockholm"
-  }
-]
+[{"question": "What is the capital of Finland?", "answer": "Helsinki"}, {"question": "What is the capital of Sweden?", "answer": "Stockholm"}, {"question": "1234", "answer": "5678"}]
