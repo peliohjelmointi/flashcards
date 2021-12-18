@@ -13,5 +13,9 @@
 {% else %}
     <button><a href="{{url_for('show_card',index=0)}}">Start over</a></button>
 {% endif %}
+<br>
+<button>
+    <a href="{{url_for('remove_card',index=index)}}">Remove Card</a>
+</button>
 </body>
 </html>
